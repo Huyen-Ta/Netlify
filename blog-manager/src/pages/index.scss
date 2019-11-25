@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+// Base styles
+@import '../assets/styles/Main.scss';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+
+// Common Component
+@import '../components/common/button/Button.scss';
+@import '../components/common/input/Input.scss';
+@import '../components/common/static-image/StaticImage.scss';
+@import '../components/common/popup/Popup.scss';
+@import '../components/common/pagination/Pagination.scss';
+@import '../components/common/indicator/Indicator.scss';
+
+// Components styles
+@import '../components/header/Header.scss';
+@import '../components/layout/Layout.scss';
+@import '../components/signInForm/SignInForm.scss';
+@import '../components/postForm/PostForm.scss';
+@import '../components/posts/Post.scss';
+
+body {
+  margin: $margin-none;
+  padding: $padding-none;
+  font-family: Helvetica;
+}

@@ -1,0 +1,84 @@
+.post-detail {
+  &__wrapper {
+    width: 600px;
+    margin: $margin-hg auto;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+  }
+  
+  &__comment-group {
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  &__user-name {
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  &__icon-comment {
+    margin-left: $margin-lg;
+    margin-top: 23px;
+    cursor: pointer;
+    color: $dove-gray;
+  }
+
+  &__comment {
+    @extend %display-flex;
+    align-items: center;
+    margin-bottom: $margin-xl;
+
+    .post-detail__field-comment {
+      margin-bottom: $margin-none;
+      margin-right: $margin-lg;
+    }
+
+    .avatar {
+      width: 40px;
+      border-radius: 50px;
+      margin-right: $margin-md;
+      margin-bottom: 0;
+    }
+
+    .comment-text {
+      margin-bottom: $margin-none;
+      font-size: $font-size-xs;
+    }
+
+    .form__input-group {
+      margin-bottom: $margin-none;
+
+      .form__textbox--error {
+        margin-bottom: 25px;
+      }
+    }
+
+    .form__input-group--wrapper {
+      width: 70%;
+    }
+
+    .btn-submit {
+      font-size: 12px;
+      padding: 2px 7px;
+      margin-left: 10px;
+    }
+  }
+
+  &__field {
+    margin-bottom: $margin-md;
+  }
+
+  &__btn-group {
+    @extend %display-flex;
+    justify-content: flex-end;
+
+    .btn-deep-orange {
+      margin-right: $margin-xl;
+    }
+  }
+}

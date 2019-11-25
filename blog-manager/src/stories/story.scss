@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+// Base styles
+@import '../assets/styles/Main.scss';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+
+// Common Component
+@import '../components/common/button/Button.scss';
+@import '../components/common/input/Input.scss';
+@import '../components/common/static-image/StaticImage.scss';
+@import '../components/common/popup/Popup.scss';
+@import '../components/common/indicator/Indicator.scss';
+@import '../components/common/pagination/Pagination.scss';
+
+.storybook {
+  @extend %display-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  margin: $margin-none auto;
+
+  .btn {
+    width: 185px;
+  }
+
+  .title {
+    margin-top: $margin-none;
+  }
+
+  &__pagination {
+    li {
+      @extend %display-flex;
+      align-items: center;
+    }
+  }
+}
+
+.button--wrapper {
+  align-items: center;
+}

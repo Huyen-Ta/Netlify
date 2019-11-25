@@ -1,0 +1,124 @@
+.header {
+  @extend %display-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: $dodger-blue;
+  padding: $padding-xl $padding-xxl;
+  height: 150px;
+  z-index: $z-index-max;
+
+  .logo {
+    width: 150px;
+  }
+
+  &__profile {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  &__group {
+    .dropdown {
+      @extend %display-flex;
+      position: relative;
+      top: 65%;
+      right: 20px;
+      flex-direction: column;
+      background-color: $white;
+      padding: $padding-md $padding-lg;
+      border-radius: 5px;
+      position: absolute;
+      box-shadow: $dove-gray 0px 0px 10px 0px;
+    }
+  }
+
+  .search-wrapper {
+    @extend %display-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: $white;
+    border-radius: 4px;
+  }
+
+  .search-wrapper {
+    .input-search {
+      width: 100%;
+      font-size: $font-size-xs;
+      padding: $padding-sm;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+
+    .icon-search {
+      color: $dove-gray;
+      margin-right: $margin-md;
+      cursor: pointer;
+    }
+
+    .form__input-group {
+      margin-bottom: 0;
+      width: 90%;
+    }
+  
+    .icon-search-filter {
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+
+  &__user-name-group {
+    color: $tundora;
+  }
+
+  .avatar {
+    width: $avatar-width;
+    height: $avatar-height;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__btn-sign-in {
+    color: $tundora;
+    font-size: $font-size-xs;
+    text-decoration: none;
+    margin-left: 40px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-left: $margin-none;
+    padding: $padding-none;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  &__user-name-group {
+    @extend %display-flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .form__input-group {
+      width: 100%;
+      margin-bottom: $margin-none;
+    }
+  }
+
+  &__user-name {
+    font-size: $font-size-tiny;
+    font-weight: bold;
+    width: 100px;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  &__user-profile {
+    margin-bottom: $margin-none;
+    font-size: $font-size-xs;
+    color: $tundora;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+}

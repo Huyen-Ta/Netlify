@@ -1,0 +1,24 @@
+.btn {
+  text-transform: uppercase;
+  color: $white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: $font-size-xs;
+  padding: $padding-sm $padding-xl;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  background-color: $alto !important;
+  color: $silver-chalice;
+  cursor: not-allowed;
+}
+
+.btn-submit {
+  background-color: $dodger-blue;
+}
+
+.btn-deep-orange {
+  background-color: $torch-red;
+}

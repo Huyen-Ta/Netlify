@@ -1,0 +1,27 @@
+.loading-indicator {
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $z-index-tiny;
+    background-color: $silver-chalice;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    bottom: 50%;
+    width: $icon-width-sm;
+    height: $icon-height-sm;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: $white;
+    z-index: $z-index-max;
+  }
+}

@@ -1,0 +1,60 @@
+.form {
+  &__textbox,
+  &__input-group--wrapper {
+    width: 100%;
+  }
+
+  &__textbox {
+    @include border(1px, solid, $heather);
+    font-size: $font-size-xs;
+    color: $tundora;
+    height: $input-height-sm;
+    padding: $padding-none 8px;
+    outline: none;
+  }
+
+  &__input-group {
+    margin-bottom: $margin-xl;
+  }
+
+  &__input-group--title,
+  &__text--error {
+    @extend %display-flex;
+  }
+
+  &__input-group--title {
+    justify-content: space-between;
+  }
+
+  &__input-title {
+    margin-bottom: $margin-md;
+    font-weight: normal;
+  }
+
+  &__text--error {
+    justify-content: flex-end;
+    font-size: $font-size-tiny;
+    color: $liat-red;
+    margin-bottom: $margin-none;
+  }
+
+  &__textarea {
+    @include border(1px, solid, $input-border);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: $font-size-xs;
+    resize: none;
+    height: $textarea-height-md;
+    color: $tundora;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__textbox--error,
+  &__textarea--error {
+    @include border(1px, solid, $liat-red);
+  }
+}

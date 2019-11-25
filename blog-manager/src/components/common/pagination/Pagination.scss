@@ -1,0 +1,6 @@
+.pagination {
+  @extend %display-flex;
+  justify-content: space-between;
+  margin-top: $margin-xl;
+  padding: $padding-none $padding-xl;
+}

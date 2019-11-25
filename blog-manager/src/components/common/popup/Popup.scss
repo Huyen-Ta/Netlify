@@ -1,0 +1,78 @@
+.modal-container,
+.modal-footer {
+  @extend %display-flex;
+  align-items: center;
+}
+
+.modal-container,
+.modal-backdrop {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.modal-container {
+  position: fixed;
+  justify-content: center;
+  z-index: $z-index-xs;
+  overflow: hidden;
+
+  .modal {
+    border-radius: 10px;
+    width: $popup-width-xl;
+    background-color: $white;
+    position: absolute;
+    z-index: $z-index-base;
+    max-height: 100%;
+    padding: $padding-lg;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid $heather;
+  }
+
+  .modal-body {
+    padding-bottom: 15px;
+    text-align: center;
+
+    .title {
+      font-size: $font-size-sm;
+      margin-top: $margin-sm;
+      text-align: left;
+    }
+  }
+
+  .modal-footer {
+    justify-content: flex-end;
+    background-color: $white;
+    width: 100%;
+
+    .btn-submit {
+      text-transform: uppercase;
+      color: $white;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      font-size: $font-size-tiny;
+      padding: $padding-sm $padding-xl;
+    }
+
+    .btn-cancel {
+      background-color: $white;
+      color: $tundora;
+      margin-left: $margin-lg;
+      padding: $padding-none $padding-md;
+    }
+
+    .btn-success--large {
+      margin-right: $margin-xl;
+    }
+  }
+
+  .modal-backdrop {
+    position: absolute;
+    background-color: $black;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "setupFilesAfterEnv": [
+    "<rootDir>src/configs/TestSetup.js"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>src/config/TestSetup.js",
+    "<rootDir>src/App.js",
+    "<rootDir>src/index.js",
+    "<rootDir>src/router/*.js",
+    "node_modules",
+    ".cache",
+    "public"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,mjs}",
+    "!src/contexts/helpers/Connect.js",
+    "!src/config/TestSetup.js",
+    "!src/**/*.scss",
+    "!src/constants/images",
+    "!src/pages/index.js",
+    "!src/pages/sign-in.js",
+    "!src/pages/not-found-page.js",
+    "!src/templates/post.js",
+    "!src/utils/typography.js",
+    "!src/**/*.stories.js"
+  ],
+  "moduleNameMapper": {
+    ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+    ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file-mock.js"
+  },
+  "resolver" : null,
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
+    "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+  ],
+  "testEnvironment": "node",
+  "testURL": "http://localhost",
+  "transform": {
+    "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/(?!(gatsby)/)"
+  ],
+  "globals": {
+    "__PATH_PREFIX__": ""
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node",
+    "mjs"
+  ],
+  "modulePaths": [
+    "src/"
+  ],
+  "setupFiles": ["<rootDir>/loadershim.js"]
+}

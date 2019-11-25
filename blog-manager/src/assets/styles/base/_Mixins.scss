@@ -1,0 +1,16 @@
+%display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*
+ * border: Style border
+*/
+@mixin border($borderWidth, $borderStyle, $borderColor) {
+  border-width: $borderWidth;
+  border-style: $borderStyle;
+  border-color: $borderColor;
+}

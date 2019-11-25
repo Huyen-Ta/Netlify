@@ -1,0 +1,76 @@
+.post {
+  .btn-submit {
+    margin-top: $margin-xl;
+  }
+
+  &__group,
+  &__row {
+    @extend %display-flex;
+  }
+
+  &__group {
+    margin: $margin-none auto;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;  
+  }
+
+  &__row {
+    justify-content: space-between;
+
+    .search-result {
+      margin-top: $margin-xl;
+      color: $tundora;
+      font-size: $font-size-xs;
+      margin-bottom: 0;
+    }
+  }
+
+  &__detail {
+    margin: $margin-xl;
+    width: 325px;
+    text-decoration: none;
+    box-shadow: $dove-gray 0px 0px 10px 0px;
+    border-radius: 6px;
+    height: 310px;
+    text-align: left;
+
+    .post-image {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+  }
+
+  &__add-new {
+    width: 170px;
+    text-decoration: none;
+    background-color: $dodger-blue;
+    color: $white;
+    margin-top: $margin-xl;
+    text-align: center;
+    padding: $padding-sm $padding-md;
+  }
+
+  &__title {
+    margin-top: $margin-lg;
+    color: $main-black;
+    margin-bottom: $margin-md;
+  }
+
+  &__title,
+  &__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: $padding-none 15px;
+  }
+
+  &__description {
+    width: 250px;
+    color: $tundora;
+
+    &:focus {
+      white-space: inherit;
+    }
+  }
+}
